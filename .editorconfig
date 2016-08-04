@@ -1,0 +1,20 @@
+root = true
+
+# Style all files
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Style Makefiles
+[Makefile]
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+# Style specific file extensions
+[*.{c,h}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
