@@ -11,9 +11,6 @@
 
 #include <string.h>
 #include <stdlib.h>
-#include <stdbool.h>
-#include <execinfo.h>
-// #include <unistd.h>
 
 #define FILEN (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 
