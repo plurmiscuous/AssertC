@@ -4,8 +4,10 @@
 //
 
 #include <stdio.h>
-#include <execinfo.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+#include <execinfo.h>
 
 #include "Assert.h"
 
