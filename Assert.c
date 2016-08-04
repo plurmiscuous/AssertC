@@ -14,6 +14,8 @@
 #define DEPTH 32
 
 void p_errmsg(char *exp, const char *file, const char* fn, int line) {
+    fflush(NULL);
+    fprintf(stderr, "\n");
     // standard assertion error message
     fprintf(stderr, "Assert(%s) failed in %s at %s:%d \n", exp, fn, file, line);
 }
@@ -39,11 +41,9 @@ void p_strace(void) {
             okay = (tokens[i][j] = strtok_r(NULL, " ", &ptr)) != NULL;
     }
 
-    for (int i = 1; i < count && okay; i++) {
+    for (int i = 1; i < count && okay; i++)
         fprintf(stderr, " <%02d> %18s : %s\n", atoi(tokens[i][0]),
                 tokens[i][2], tokens[i][3]);
-        fprintf(stderr, )
-    }
 
     free(strings);
 }
